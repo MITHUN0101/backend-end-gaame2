@@ -22,6 +22,10 @@ app.use(expressSession({
   secret:"hello Bye"
 }));
 
+// app.use(passport.initialize());
+// app.use(passport.session());
+// passport.serializeUser(usersRouter.serializeUser());
+// passport.deserializeUser(usersRouter.deserializeUser());
 app.use(flash());
 
 app.use(logger('dev'));
